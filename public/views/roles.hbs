@@ -1,0 +1,196 @@
+{{> header}}
+
+<main>
+    <div class="content-dash d-flex">
+        <aside class="menu">
+            <div class="content-menu">
+
+                <a class="content-link-menu d-flex align-items-center" href="/home">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/inicio.svg" alt="">
+                    </div>
+                    <span class="text-menu">Inicio</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center active" href="/roles">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/roles.svg" alt="">
+                    </div>
+                    <span class="text-menu">Roles</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/usuarios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/usuarios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Usuarios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/insumos">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/insumos.svg" alt="">
+                    </div>
+                    <span class="text-menu">Insumos</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/proveedores">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/proveedores.svg" alt="">
+                    </div>
+                    <span class="text-menu">Proveedores</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/compras">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/compras.svg" alt="">
+                    </div>
+                    <span class="text-menu">Compras</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/servicios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/servicios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Servicios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/clientes">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/clientes.svg" alt="">
+                    </div>
+                    <span class="text-menu">Clientes</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/citas">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/citas.svg" alt="">
+                    </div>
+                    <span class="text-menu">Citas</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <div class="content-main d-flex justify-content-center">
+            <div class="content-title-form">
+                <h2 class="main-title text-center">CREAR ROL</h2>
+
+                <form class="main-form" action="">
+
+                    <div class="content-select-search d-flex justify-content-between">
+                        <select name="" id="" class="select-main form-select" size="1"
+                            onchange="window.location.href=this.value;">
+                            <option value="/roles">Crear Rol</option>
+                            <option value="/listar-roles">Listar Roles</option>
+                        </select>
+
+                        <input class="search form-control" type="text" placeholder="Buscar...">
+                    </div>
+
+                    <div class="field-content d-flex">
+
+                        <div class="content-label-input">
+                            <label for="">Nombre de rol</label><br>
+                            <input class="general-input form-control" type="text">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Fecha de creado</label><br>
+                            <input class="general-input form-control" type="date">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Estado</label><br>
+                            <select name="" id="" class="select-main form-select">
+                                <option value="1">Activo</option>
+                                <option value="2">Inactivo</option>
+                            </select>
+                        </div>
+
+                        <div class="content-permissions">
+                            <h6 class="text-center">PERMISOS</h6>
+                            <div class="permissions d-flex">
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Dashboard</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Roles</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Usuarios</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Insumos</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Proveedores</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Compras</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Servicios</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Clientes</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="content-role-permissions d-flex justify-content-center">
+                                    <div class="role-permissions d-flex justify-content-between align-items-center">
+                                        <span class="text-rol">Citas</span>
+                                        <img class="toggle" src="../assets/img/toggle-off-red.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content-button d-flex justify-content-center">
+                        <div class="content-send-clear">
+                            <input class="send-button" type="submit" value="Crear">
+                            <input class="clear-button" type="reset" value="Limpiar">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+</main>

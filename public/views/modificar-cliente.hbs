@@ -1,0 +1,164 @@
+{{> header}}
+
+<main>
+    <div class="content-dash d-flex">
+        <aside class="menu">
+            <div class="content-menu">
+
+                <a class="content-link-menu d-flex align-items-center" href="/home">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/inicio.svg" alt="">
+                    </div>
+                    <span class="text-menu">Inicio</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/roles.svg" alt="">
+                    </div>
+                    <span class="text-menu">Roles</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center " href="/usuarios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/usuarios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Usuarios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/insumos">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/insumos.svg" alt="">
+                    </div>
+                    <span class="text-menu">Insumos</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/proveedores">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/proveedores.svg" alt="">
+                    </div>
+                    <span class="text-menu">Proveedores</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/compras">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/compras.svg" alt="">
+                    </div>
+                    <span class="text-menu">Compras</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/servicios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/servicios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Servicios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center active" href="/clientes">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/clientes.svg" alt="">
+                    </div>
+                    <span class="text-menu">Clientes</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/citas">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/citas.svg" alt="">
+                    </div>
+                    <span class="text-menu">Citas</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <div class="content-main d-flex justify-content-center">
+            <div class="content-title-form">
+                <h2 class="main-title text-center">MODIFICAR CLIENTE</h2>
+
+                <form id="formulario" class="main-form" action="">
+
+                    <div class="content-select-search d-flex justify-content-between">
+                        <select name="" id="" class="select-main form-select" size="1"
+                            onchange="window.location.href=this.value;">
+                            <option value="/modificar-cliente">Modificar cliente</option>
+                            <option value="/clientes">Crear Cliente</option>
+                            <option value="/listar-clientes">Listar Cliente</option>
+
+                        </select>
+
+                        <input class="search form-control" type="text" placeholder="Buscar...">
+                    </div>
+
+                    <div class="field-content d-flex">
+
+                        <div class="content-label-input">
+                            <label for="">Nombre</label><br>
+                            <input class="general-input form-control" type="text" id="nombre">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Apellidos</label><br>
+                            <input class="general-input form-control" type="text" id="apellido">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Tipo de documento</label><br>
+                            {{!-- <input class="general-input form-control" type="text"> --}}
+                            <select name="" id="tipo" class="select-main form-select" size="1" onchange="">
+                                <option value="1">Documento</option>
+                                <option value="2">CC</option>
+                                <option value="3">TI</option>
+                                <option value="4">CE</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Documento</label><br>
+                            <input class="general-input form-control" type="text" id="documento">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Fecha de Naciemiento</label><br>
+                            <input class="general-input form-control" type="text" id="nacimiento">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Correo</label><br>
+                            <input class="general-input form-control" type="text" id="correo">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Telefono</label><br>
+                            <input class="general-input form-control" type="text" id="telefono">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Dirección</label><br>
+                            <input class="general-input form-control" type="text" id="direccion">
+                        </div>
+
+                        <div class="content-observations">
+                            <label for="">Observaciones</label><br>
+                            <input class="observations form-control" type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="content-button d-flex justify-content-center">
+                        <div class="content-send-clear">
+                            <input id="registrar" class="send-button" type="submit" value="Guardar">
+                            <input class="clear-button" type="reset" value="Limpiar">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="../assets/js/ValidarClientes.js"></script>
+    </div>
+</main>

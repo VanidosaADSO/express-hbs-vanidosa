@@ -1,0 +1,40 @@
+.menu {
+    width: 210px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: #273746;
+}
+
+.content-menu {
+    margin-top: 40px;
+}
+
+.content-link-menu {
+    height: 60px;
+    width: 210px;
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: #1F2B38;
+}
+
+.content-link-menu:hover {
+    background-color: #1F2B38;
+    color: white;
+}
+
+.content-icon-menu {
+    width: 37px;
+    margin-left: 22px;
+}
+
+.icon-menu {
+    height: 20px;
+}
+
+.text-menu {
+    margin-left: 5px;
+}

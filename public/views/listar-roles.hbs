@@ -1,0 +1,152 @@
+{{> header}}
+
+<main>
+    <div class="content-dash d-flex">
+        <aside class="menu">
+            <div class="content-menu">
+
+                <a class="content-link-menu d-flex align-items-center" href="/home">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/inicio.svg" alt="">
+                    </div>
+                    <span class="text-menu">Inicio</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center active" href="/roles">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/roles.svg" alt="">
+                    </div>
+                    <span class="text-menu">Roles</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/usuarios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/usuarios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Usuarios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/insumos">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/insumos.svg" alt="">
+                    </div>
+                    <span class="text-menu">Insumos</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/proveedores">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/proveedores.svg" alt="">
+                    </div>
+                    <span class="text-menu">Proveedores</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/compras">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/compras.svg" alt="">
+                    </div>
+                    <span class="text-menu">Compras</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/servicios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/servicios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Servicios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/clientes">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/clientes.svg" alt="">
+                    </div>
+                    <span class="text-menu">Clientes</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/citas">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/citas.svg" alt="">
+                    </div>
+                    <span class="text-menu">Citas</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <div class="content-main d-flex justify-content-center">
+            <div class="content-title-list">
+                <h2 class="main-title text-center">LISTA DE ROLES</h2>
+
+                <form class="main-form" action="">
+
+                    <div class="content-select-search d-flex justify-content-between">
+                        <select name="" id="" class="select-main form-select" size="1" onchange="window.location.href=this.value;">
+                            <option value="/listar-roles">Listar Roles</option>
+                            <option value="/roles">Crear Rol</option>
+                        </select>
+
+                        <input class="search form-control" type="text" placeholder="Buscar...">
+                    </div>
+
+                    <div class="content-table">
+                        <table class="main-table table table-bordered">
+                            <tr>
+                                <th class="space text-center">ID</th>
+                                <th class="space text-center">Nombre de Rol</th>
+                                <th class="space text-center">Fecha de creado</th>
+                                <th class="space text-center">Permisos</th>
+                                <th class="space text-center">Estado</th>
+                                <th class="space text-center">Acciones</th>
+                            </tr>
+                            <tr>
+                                <td class="space">001</td>
+                                <td class="space">Administrador</td>
+                                <td class="space">24/Julio/2021</td>
+                                <td class="">Dashboard, Roles, Usuarios, Insumos, Proveedores, Compras, Servicios,
+                                    Clientes, Citas</td>
+                                <td class="space">Activo</td>
+                                <td class="space action d-flex justify-content-center">
+                                    <div class="content-icon-action">
+                                        <a href="/modificar-rol"><img class="edit" src="../assets/img/edit.svg"
+                                                alt=""></a>
+                                        <img class="toggle" src="../assets/img/toggle-on-green.svg" alt="">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <td class="space">002</td>
+                            <td class="space">Empleado</td>
+                            <td class="space">24/Julio/2021</td>
+                            <td class="">Dashboard, Insumos, Proveedores, Compras, Servicios, Clientes, Citas</td>
+                            <td class="space">Activo</td>
+                            <td class="space action d-flex justify-content-center">
+                                <div class="content-icon-action">
+                                    <a href="/modificar-rol"><img class="edit" src="../assets/img/edit.svg"
+                                            alt=""></a>
+                                    <img class="toggle" src="../assets/img/toggle-on-green.svg" alt="">
+                                </div>
+                            </td>
+                            </tr>
+
+                            <td class="space">003</td>
+                            <td class="space">Cliente</td>
+                            <td class="space">24/Julio/2021</td>
+                            <td class="">Servicios, Clientes, Citas</td>
+                            <td class="space">Activo</td>
+                            <td class="space action d-flex justify-content-center">
+                                <div class="content-icon-action">
+                                    <a href="/modificar-rol"><img class="edit" src="../assets/img/edit.svg"
+                                            alt=""></a>
+                                    <img class="toggle" src="../assets/img/toggle-on-green.svg" alt="">
+                                </div>
+                            </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+</main>

@@ -1,0 +1,160 @@
+{{> header}}
+
+<main>
+    <div class="content-dash d-flex">
+        <aside class="menu">
+            <div class="content-menu">
+
+                <a class="content-link-menu d-flex align-items-center" href="/home">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/inicio.svg" alt="">
+                    </div>
+                    <span class="text-menu">Inicio</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/roles.svg" alt="">
+                    </div>
+                    <span class="text-menu">Roles</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center active" href="/usuarios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/usuarios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Usuarios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/insumos">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/insumos.svg" alt="">
+                    </div>
+                    <span class="text-menu">Insumos</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/proveedores">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/proveedores.svg" alt="">
+                    </div>
+                    <span class="text-menu">Proveedores</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/compras">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/compras.svg" alt="">
+                    </div>
+                    <span class="text-menu">Compras</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/servicios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/servicios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Servicios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/clientes">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/clientes.svg" alt="">
+                    </div>
+                    <span class="text-menu">Clientes</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/citas">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/citas.svg" alt="">
+                    </div>
+                    <span class="text-menu">Citas</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <div class="content-main d-flex justify-content-center">
+            <div class="content-title-form">
+                <h2 class="main-title text-center">MODIFICAR USUARIO</h2>
+
+                <form class="main-form" action="">
+
+                  <div class="content-select-search d-flex justify-content-between">
+                        <select name="" id="" class="select-main form-select" size="1"
+                            onchange="window.location.href=this.value;">
+                            <option value="/modificar-usuario">modificar usuario</option>
+                            <option value="/usuarios">Crear Usuario</option>
+                            <option value="/listar-usuarios">Listar Usuarios</option>
+                        </select>
+
+                        <input class="search form-control" type="text" placeholder="Buscar...">
+                    </div>
+
+                    <div class="field-content d-flex">
+
+                        <div class="content-label-input">
+                            <label for="">Nombre</label><br>
+                            <input class="general-input form-control" type="text" id="nombre">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Apellidos</label><br>
+                            <input class="general-input form-control" type="text" id="apellido">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Tipo de documento</label><br>
+                            <select name="" id="Tipodocumento" class="general-input form-select">
+                                <option selected>Seleccione...</option>
+                                <option value="">Cedula ciudadanía</option>
+                                <option value="">Cedula de extranjería</option>
+                                <option value="">Targeta de identidad</option>
+                            </select>
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Documento</label><br>
+                            <input class="general-input form-control" type="number" id="documento">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Dirección</label><br>
+                            <input class="general-input form-control" type="text" id="direccion">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Teléfono</label><br>
+                            <input class="general-input form-control" type="number" id="telefono">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Correo</label><br>
+                            <input class="general-input form-control" type="email" id="correo">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Rol</label><br>
+                            <input class="general-input form-control" type="text" id="rol">
+                        </div>
+
+                        <div class="content-observations">
+                            <label for="">Observaciones</label><br>
+                            <input class="observations form-control" type="text" id="observaciones">
+                        </div>
+
+                    </div>
+
+                    <div class="content-button d-flex justify-content-center">
+                        <div class="content-send-clear">
+                            <input class="send-button" type="submit" id="btnRegistrar" value="Guardar">
+                            <input class="clear-button" type="reset" value="Limpiar">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="../assets/js/ValidarUsuarios.js"></script>
+    </div>
+</main>

@@ -1,0 +1,152 @@
+{{> header}}
+
+<main>
+    <div class="content-dash d-flex">
+        <aside class="menu">
+            <div class="content-menu"> 
+
+                <a class="content-link-menu d-flex align-items-center" href="/home">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/inicio.svg" alt="">
+                    </div>
+                    <span class="text-menu">Inicio</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/roles.svg" alt="">
+                    </div>
+                    <span class="text-menu">Roles</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/usuarios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/usuarios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Usuarios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/insumos">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/insumos.svg" alt="">
+                    </div>
+                    <span class="text-menu">Insumos</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/proveedores">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/proveedores.svg" alt="">
+                    </div>
+                    <span class="text-menu">Proveedores</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/compras">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/compras.svg" alt="">
+                    </div>
+                    <span class="text-menu">Compras</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/servicios">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/servicios.svg" alt="">
+                    </div>
+                    <span class="text-menu">Servicios</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center" href="/clientes">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/clientes.svg" alt="">
+                    </div>
+                    <span class="text-menu">Clientes</span>
+                </a>
+
+                <a class="content-link-menu d-flex align-items-center active" href="/citas">
+                    <div class="content-icon-menu d-flex justify-content-center">
+                        <img class="icon-menu" src="../assets/img/citas.svg" alt="">
+                    </div>
+                    <span class="text-menu">Citas</span>
+                </a>
+
+            </div>
+        </aside>
+
+        <div class="content-main d-flex justify-content-center">
+            <div class="content-title-form">
+                <h2 class="main-title text-center">AGENDAR CITA</h2>
+
+                <div id="respuesta"></div>
+                <form id="formulario" class="main-form" action="">
+
+                    <div class="content-select-search d-flex justify-content-between">
+                        <select name="" id="" class="select-main form-select" size="1"
+                            onchange="window.location.href=this.value;">
+                            <option value="/citas">Agendar Cita</option>
+                            <option value="/listar-citas">Listar Citas</option>
+                        </select>
+
+                        <input class="search form-control" type="text" placeholder="Buscar...">
+                    </div>
+
+                    <div class="field-content d-flex">
+
+                        <div class="content-label-input">
+                            <label for="">Nombre</label><br>
+                            <input class="general-input form-control" type="text" id="nombre">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Apellidos</label><br>
+                            <input class="general-input form-control" type="text" id="apellido">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Tipo de servicio</label><br>
+                            {{!-- <input class="general-input form-control" type="text" id="tipo"> --}}
+                            <select name="" id="" class="select-main form-select" size="1"
+                            onchange="">
+                            <option selected>Tipo de servicio</option>
+                            <option value="2">Corte de cabello</option>
+                            <option value="3">Tratamientos capilares</option>
+                            <option value="4">Rasurado</option>
+                            <option value="4">Arreglo de barba, bigote y patilla</option>
+                            <option value="6">Tintura de cabello</option>
+                            <option value="7">Maquillaje facial</option>
+
+                        </select>
+                            
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Fecha</label><br>
+                            <input class="general-input form-control" type="date" id="fecha">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Hora</label><br>
+                            <input class="general-input form-control" type="time" id="hora">
+                        </div>
+
+                        <div class="content-observations">
+                            <label for="">Descripcion</label><br>
+                            <input class="observations form-control" type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="content-button d-flex justify-content-center">
+                        <div class="content-send-clear">
+                            <input id="registrar" class="send-button" type="submit" value="Registrar">
+                            <input class="clear-button" type="reset" value="Limpiar">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+        <script src="../assets/js/ValidarCitas.js"></script>
+    </div>
+</main>
