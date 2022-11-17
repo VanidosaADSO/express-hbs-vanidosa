@@ -1,0 +1,16 @@
+.cuadro_citas{
+    border: solid rgba(226, 221, 221, 0.379);
+    padding-top: 20px;    
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.cuadro_citas{
+    text-align: center;
+}
+
+.boton-citas{
+    margin-top: 20px;
+}

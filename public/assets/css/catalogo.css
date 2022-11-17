@@ -1,0 +1,24 @@
+.body_catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.producto{
+    margin-top:90px;
+    margin: 30px;
+}
+
+.catalogo_l{
+    margin-top: 50px;
+}
+
+.produto__img{
+    width: 300px;
+    height: 240px;
+}
+
+.produto__price{
+    color:#f8645e ;
+}

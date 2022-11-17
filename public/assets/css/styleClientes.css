@@ -1,0 +1,241 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-----------------------Header-----------------------*/
+.content-header {
+    width: 100%;
+    height: 126px;
+}
+
+.img-logo {
+    position: absolute;
+    padding-top: 17px;
+    padding-left: 28px;
+}
+
+/* Nav */
+nav {
+    height: 45px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #137B93;
+    padding: 13px 18px;
+}
+
+/* Bottom border animation */
+.nav-link:after {
+    display: block;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 300ms linear;
+    border-bottom: solid 2px #137B93;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-link.border:after {
+    transform: scaleX(1);
+}
+
+/* Bottom border animation end */
+
+.nav-link:hover {
+    color: #137B93;
+}
+
+.active {
+    background-color: #137B93;
+    color: #ffffff;
+}
+
+.active:hover {
+    color: #ffffff;
+}
+
+.container-icon-header {
+    position: absolute;
+    top: 19px;
+    right: 25px;
+}
+
+.content-icon-header:nth-child(1) {
+    margin-right: 34px;
+}
+
+/*------------------------Main------------------------*/
+main {
+    position: relative;
+}
+
+.main-img {
+    opacity: .94;
+}
+
+.content-btn-main {
+    position: absolute;
+    margin-left: calc(50% - 228px);
+    margin-top: calc(50vh - 80px);
+}
+
+.btn-main {
+    width: 198px;
+    height: 48px;
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: #F8645ED9;
+    color: #FFFFFFE6;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+.btn-main:hover {
+    background-color: #F8645E;
+    color: #FFFFFF;
+}
+
+.main-img {
+    width: 100%;
+}
+
+
+.Link-whatsapp {
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.content-form {
+    width: 350px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Estilos de el login */
+
+
+.input-inicio {
+    color: rgb(109, 84, 84);
+    border: none;
+
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+
+form {
+    padding-top: 25px;
+}
+
+.bnt-loguear {
+    background-color: #137B93;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px 20px;
+    /* alto, ancho */
+    border: none;
+}
+
+/*Estilos del registro */
+
+.input-registro {
+    line-height: 60px;
+    outline: none;
+
+}
+
+.registroo {
+    text-align: center;
+
+
+}
+
+input {
+    border: none;
+    border-bottom:1px solid #c0c0c0;
+    width: 400px;
+    outline: none;
+    line-height: 35px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-registrar {
+    background-color: #137B93;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px 20px;
+    /* alto, ancho */
+    border: none;
+}
+
+.fecha,
+.tipodni {
+    display: flex;
+    margin-left: 471px;
+}
+
+#tipo-de-documento{
+    margin-bottom: 70px;
+}
+
+.titulo-registro{
+    margin-top: 170px;
+}
+
+/* FOOTER */
+footer{
+    background: rgba(206, 199, 199, 0.288);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    margin:auto;
+    display: flex;
+    width: 90%;
+    justify-content:space-around;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #137B93;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h5{
+    color:rgb(0, 0, 0);
+    border-bottom: 2px solid #0d6a7f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.content-foo p{
+    color: rgba(31, 9, 9, 0.761);
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #282626;
+}

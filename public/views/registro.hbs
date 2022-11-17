@@ -1,0 +1,40 @@
+{{> headerclientes}}
+<main>
+
+    <div class="content-registration-form d-flex justify-content-center align-items-center">
+        <div class="registration-form">
+            <h2 class="text-center align-items-center  titulo-registro">REGISTRO</h2>
+            <form action="">
+                <input id="name" class="access-input form-control" type="text" placeholder="Nombre" id="nombre"
+                    required>
+                <input class="access-input form-control" type="text" placeholder="Apellidos" required id="apellido">
+                <select class="access-input form-select select" name="" id="">
+                    <option value="0">Tipo de documento</option>
+                    <option value="1">Cédula de ciudadanía</option>
+                    <option value="1">Cédula de extranjería</option>
+                    <option value="1">Tarjeta de identidad</option>
+                </select>
+                <input class="access-input form-control" type="text" placeholder="Documento" id="documento" required>
+                <input class="access-input form-control" type="text" placeholder="Fecha de nacimiento" id="nacimiento"
+                    onfocus="(this.type='date')" required>
+                <input class="access-input form-control" type="text" placeholder="Dirección" id="direccion">
+                <input class="access-input form-control" type="text" placeholder="Teléfono" id="telefono">
+                <input class="access-input form-control" type="text" placeholder="Correo" id="correo" required><br>
+                <input class="access-input form-control" type="text" placeholder="Contraseña" id="contraseña"
+                    required><br>
+
+                <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+                </p>
+            </form>
+
+            <div class="boton-registro">
+                <input id="btnRegistrar" class="btn btn-primary" type="submit" value="Registrar">
+            </div>
+        </div>
+    </div>
+    <a class="Link-whatsapp d-flex justify-content-center" href=""><img src="/img/whatsapp.svg" alt=""
+            style="width: 36px;"></a>
+</main>
+<a class="Link-whatsapp d-flex justify-content-center" href=""><img src="/img/whatsapp.svg" alt=""
+        style="width: 36px;"></a>
+{{> footerclientes}}

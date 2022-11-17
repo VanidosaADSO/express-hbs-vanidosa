@@ -1,0 +1,108 @@
+.container-modal-account {
+    position: absolute;
+    display: none;
+    top: 70px;
+    right: 25px;
+    width: 200px;
+    box-shadow: 0px 4px 14px rgba(54, 54, 54, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/*------------------Header Modal Account------------------*/
+.header-modal-account {
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.show {
+    display: block;
+    z-index: 3;
+}
+
+.img-account-modal {
+    width: 65px;
+    margin-top: 20px;
+}
+
+.name-modal {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    line-height: 14px;
+}
+
+.email-modal {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+/*-----------------Container Setting Admin-----------------*/
+.container-setting-admin {
+    padding: 10px 0px;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.content-setting-admin {
+    width: 100%;
+}
+
+.content-account-settings,
+.content-admin-panel {
+    width: 100%;
+    padding: 8px 15px;
+}
+
+.content-account-settings:hover,
+.content-admin-panel:hover {
+    background-color: #eff0f4;
+}
+
+.account-settings,
+.admin-panel {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+}
+
+.account-settings:hover,
+.admin-panel:hover {
+    color: #000000;
+}
+
+.icon-account-settings,
+.icon-admin-panel {
+    height: 16px;
+    margin-right: 10px;
+}
+
+/*-------------------Container Login Modal-------------------*/
+.container-login-modal {
+    padding: 8px 0px;
+}
+
+.content-login-modal {
+    width: 100%;
+    padding: 8px 15px;
+}
+
+.content-login-modal:hover {
+    background-color: #eff0f4;
+}
+
+.icon-logout {
+    height: 16px;
+    margin-right: 10px;
+}
+
+.login-modal {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+}
+
+.login-modal:hover {
+    color: #000000;
+}

@@ -1,0 +1,20 @@
+{{> headerclientes}}
+<main>
+    <br>
+    <div class="cuadro_citas">
+        <h2>AGENDA TU CITA </h2>
+        <form id="formulario" class="input-inicio">
+            <input type="text" placeholder="Servicio" id="servicio"> <br>
+            <input type="text" placeholder="Tipo de servicio" id="tipo-de-servicio"><br>
+            <input type="text" placeholder="Fecha de nacimiento" id="nacimiento" onfocus="(this.type='date')"><br>
+            <input type="text" placeholder="hora" id="hora" onfocus="(this.type='time')"><br>
+            <input type="text" id="observaciones" placeholder=" Observaciones: Ej     Soy alergica a la base vogue">
+            <div class="boton-citas">
+                <button class="btn btn-primary" id="registrar" class="bnt-loguear" type="submit"
+                    value="Registrar">AGENDAR</button>
+            </div>
+        </form>
+    </div>
+</main>
+<a class="Link-whatsapp d-flex justify-content-center" href=""><img src="/img/whatsapp.svg" alt=""
+        style="width: 36px;"></a>
