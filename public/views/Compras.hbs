@@ -88,66 +88,69 @@
                         <input class="search form-control" type="text" placeholder="Buscar...">
                     </div>
 
-                    <div class="field-content d-flex">
+                    <div class="field-content-compras d-flex justify-content-between">
 
-                        <div class="content-label-input">
-                            <label for="">N_Factura</label><br>
-                            <input class="general-input form-control" type="number" id="factura">
+                        <div class="container-fpfp d-flex">
+                            <div class="content-fpfp">
+                                <div class="content-label-input-compras">
+                                    <label for="">N_Factura</label><br>
+                                    <input class="general-input-compras form-control" type="number" id="factura">
+                                </div>
+
+                                <div class="content-label-input-compras">
+                                    <label for="">Medio de Pago</label><br>
+                                    <select name="" class="general-input-compras form-select" id="pago">
+                                        <option selected>Seleccione</option>
+                                        <option value="">Transferencia</option>
+                                        <option value="">Efectivo</option>
+                                        <option value="">Credito</option>
+                                    </select>
+                                </div>
+
+                                <div class="content-label-input-compras">
+                                    <label for="">Fecha</label><br>
+                                    <input class="general-input-compras form-control" type="date" id="fecha">
+                                </div>
+
+                                <div class="content-label-input-compras">
+                                    <label for="">Proveedor</label><br>
+                                    <select name="" class="general-input-compras form-select" id="proveedor">
+                                        <option selected>Seleccione</option>
+                                        <option value="">Opcion 1</option>
+                                        <option value="">Opcion 2</option>
+                                        <option value="">Opcion 3</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="content-label-input">
-                            <label for="">Medio de Pago</label><br>
-                            <select name="" class="general-input form-select" id="pago">
-                                <option selected>Seleccione</option>
-                                <option value="">Transferencia</option>
-                                <option value="">Efectivo</option>
-                                <option value="">Credito</option>
-                            </select>
-                        </div>
+                        <div class="container-icp d-flex justify-content-end">
+                            <div class="content-icp">
+                                <div class="content-label-input-compras">
+                                    <label for="">Insumo</label><br>
+                                    <select name="" class="general-input-compras form-select" id="producto">
+                                        <option selected>Seleccione</option>
+                                        <option value="">Opcion 1</option>
+                                        <option value="">Opcion 2</option>
+                                        <option value="">Opcion 3</option>
+                                    </select>
+                                </div>
 
-                        <div class="content-label-input">
-                            <label for="">Fecha</label><br>
-                            <input class="general-input form-control" type="date" id="fecha">
-                        </div>
+                                <div class="content-label-input-compras">
+                                    <label for="">Cantidad</label><br>
+                                    <input class="general-input-compras form-control" type="number" id="cantidad">
+                                </div>
 
-                        <div class="content-label-input">
-                            <label for="">Proveedor</label><br>
-                            <select name="" class="general-input form-select" id="proveedor">
-                                <option selected>Seleccione</option>
-                                <option value="">Opcion 1</option>
-                                <option value="">Opcion 2</option>
-                                <option value="">Opcion 3</option>
-                            </select>
-                        </div>
+                                <div class="content-label-input-compras">
+                                    <label for="">Precio</label><br>
+                                    <input class="general-input-compras form-control" type="number" id="precio">
+                                </div>
 
-                        <div class="content-label-input">
-                            <label for="">Insumo</label><br>
-                            <select name="" class="general-input form-select" id="producto">
-                                <option selected>Seleccione</option>
-                                <option value="">Opcion 1</option>
-                                <option value="">Opcion 2</option>
-                                <option value="">Opcion 3</option>
-                            </select>
-                        </div>
-
-                        <div class="content-label-input">
-                            <label for="">Cantidad</label><br>
-                            <input class="general-input form-control" type="number" id="cantidad">
-                        </div>
-
-                        <div class="content-label-input">
-                            <label for="">Precio</label><br>
-                            <input class="general-input form-control" type="number" id="precio">
-                        </div>
-
-                        <div class="content-label-input">
-                            <label for=""> </label><br>
-                            <input type="hidden">
-                        </div>
-
-                        <div class="content-label-input">
-                            <label for="">Total factura</label><br>
-                            <input class="general-input form-control" type="number" id="precio">
+                                <div class="content-label-input-compras">
+                                    <label for="">Total factura</label><br>
+                                    <input class="general-input-compras form-control bg-tf" type="number" id="precio">
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -225,13 +228,6 @@
                         </tr>
 
                     </table>
-                </div>
-
-                <div class="content-button d-flex justify-content-center">
-                    <div class="content-send-clear">
-                        <input class="send-button" type="submit" id="Registrar" value="Registrar">
-                        <input class="clear-button" type="reset" value="Limpiar">
-                    </div>
                 </div>
             </div>
         </div>

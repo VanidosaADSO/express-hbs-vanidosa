@@ -73,6 +73,59 @@
     flex-wrap: wrap;
 }
 
+/* Estilos Compras */
+
+.container-fpfp {
+    width: 50%;
+}
+
+.content-fpfp {
+    width: 340px;
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.container-icp {
+    width: 50%;
+}
+
+.content-icp {
+    width: 340px;
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.content-label-input-compras {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+/* .content-label-input-compras:nth-child(2) {
+    margin-right: 0;
+}
+
+.content-label-input-compras:nth-child(4) {
+    margin-right: 0;
+} */
+
+.general-input-compras {
+    /* width: 160px; */
+    height: 38px;
+}
+
+.bg-tf {
+    background-color: #EBEDEF;
+}
+
+/* Estilos Compras End */
+
+.field-content-compras{
+    margin-bottom: 18px;
+}
+
 .content-label-input {
     margin-right: 20px;
     margin-bottom: 18px;
