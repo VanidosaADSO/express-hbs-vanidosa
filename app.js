@@ -11,11 +11,67 @@ hbs.registerPartials(__dirname + '/public/views/partials', function (err) {});
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/public/views');
 
-// ----------------------DASHBOARD--------------------
+//---------------------Pagina Clientes---------------------
+app.get('/index', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('index', {
+        nombre: 'Inicio'
+    })
+})
+
+app.get('/registro', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('registro', {
+        nombre: 'Registro'
+    })
+})
+
+app.get('/login', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('login', {
+        nombre: 'Login'
+    })
+})
+
+app.get('/serviciosclientes', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('serviciosclientes', {
+        nombre: 'Servicios clientes'
+    })
+})
+
+app.get('/agendarcitas', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('agendarcitas', {
+        nombre: 'Agendar citas'
+    })
+})
+
+app.get('/catalogo', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('catalogo', {
+        nombre: 'Catalogo'
+    })
+})
+
+app.get('/nosotros', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('nosotros', {
+        nombre: 'Nosotros'
+    })
+})
+
+app.get('/contacto', (req, res) => {
+    // res.send('Hola Mundo')
+    res.render('contacto', {
+        nombre: 'Contacto'
+    })
+})
+// ------------------------DASHBOARD-----------------------
 app.get('/', (req, res) => {
     // res.send('Hola Mundo')
-    res.render('home', {
-        nombre: 'Home'
+    res.render('index', {
+        nombre: 'Inicio'
     })
 })
 
@@ -134,7 +190,6 @@ app.get('/modificar_compras', (req, res) => {
     })
 })
 
-
 // -------------------------SERVICIOS-----------------------
 app.get('/servicios', (req, res) => {
     // res.send('Hola Mundo')
@@ -220,6 +275,8 @@ app.get('/modificar-cita', (req, res) => {
 //     //res.send('Página no encontrada')
 //     res.sendFile(__dirname + '/public/views/404.hbs');
 // })
+
+
 
 app.listen(port, () => {
     console.log(`Escuchando por el puerto ${port}`)

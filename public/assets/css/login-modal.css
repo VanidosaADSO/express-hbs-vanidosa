@@ -72,7 +72,8 @@
 }
 
 .icon-account-settings,
-.icon-admin-panel {
+.icon-admin-panel,
+.icon-main-page {
     height: 16px;
     margin-right: 10px;
 }

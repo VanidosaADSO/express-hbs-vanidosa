@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/menu.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/login-modal.css">
     <title>Vanisoft</title>
 </head>
 
@@ -22,9 +23,53 @@
                 <a href=""><img class="logo-font" src="../assets/img/logo.svg" alt=""></a>
             </div>
 
-            <div class="content-img-perfil d-flex align-items-center justify-content-end">
+            {{!-- <div class="content-img-perfil d-flex align-items-center justify-content-end">
                 <a href=""><img class="img-perfil" src="../assets/img/perfil.png" alt=""></a>
-            </div>
+            </div> --}}
+
+            <a class="content-img-account d-flex justify-content-end align-items-center" href="#">
+                <img class="img-account" src="../assets/img/perfil-2.png" alt="">
+            </a>
 
         </nav>
+
+        <!-- Modal Login -->
+        <div class="container-modal-account">
+
+            <div class="header-modal-account">
+                <div class="content-img-account-modal d-flex justify-content-center">
+                    <img class="img-account-modal" src="../assets/img/perfil-2.png" alt="">
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <span class="name-modal text-center">JUAN CARLOS PÉREZ</span>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <span class="email-modal text-center">sebasydan@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="container-setting-admin d-flex align-items-center">
+                <div class="content-setting-admin">
+                    <div class="content-account-settings d-flex align-items-center">
+                        <img class="icon-account-settings" src="../assets/img/settings.svg" alt="">
+                        <a class="account-settings" href="">Configurar mi cuenta</a>
+                    </div>
+                    <div class="content-admin-panel d-flex align-items-center">
+                        <img class="icon-main-page" src="../assets/img/spa.svg" alt="">
+                        <a class="admin-panel" href="/index">Página principal</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-login-modal">
+                <div class="content-login-modal d-flex align-items-center">
+                    <img class="icon-logout" src="../assets/img/logout.svg" alt="">
+                    <a class="login-modal" href="/login">Iniciar sesión</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Modal Login -->
     </header>

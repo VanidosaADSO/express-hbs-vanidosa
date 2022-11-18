@@ -86,6 +86,10 @@
     margin-right: 0;
 }
 
+.content-label-input:nth-child(9) {
+    margin-right: 0;
+}
+
 .general-input {
     width: 220px;
     height: 38px;

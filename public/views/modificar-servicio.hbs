@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center" href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -88,7 +88,7 @@
                         <input class="search form-control" type="text" placeholder="Buscar...">
                     </div>
 
-                   <div class="field-content d-flex">
+                    <div class="field-content d-flex">
 
                         <div class="content-label-input">
                             <label for="">Nombre del servicio</label><br>
@@ -100,20 +100,16 @@
                             <input class="general-input form-control" type="text" id="tiempo">
                         </div>
 
-                     
+
 
                         <div class="content-label-input">
                             <label for="">Hora del Servicio</label><br>
                             <input class="general-input form-control" type="text" id="hora">
                         </div>
 
-                      
-
-                     
-
                         <div class="content-observations">
                             <label for="">Descripción</label><br>
-                            <input class="observations form-control" type="text">
+                            <textarea class="observations form-control" name="" id="" cols="30" rows="10"></textarea>
                         </div>
 
                     </div>
@@ -130,7 +126,10 @@
         </div>
 
     </div>
-    </div>
-    <script src="../assets/js/ValidarServicios.js"></script>
-    </div>
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarServicios.js"></script>
+</body>
+
+</html>

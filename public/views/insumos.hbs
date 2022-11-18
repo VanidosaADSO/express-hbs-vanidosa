@@ -3,7 +3,7 @@
 <main>
     <div class="content-dash d-flex">
         <aside class="menu">
-            <div class="content-menu"> 
+            <div class="content-menu">
 
                 <a class="content-link-menu d-flex align-items-center" href="/home">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center " href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -85,7 +85,7 @@
                         </select>
 
                         <input class="search form-control" type="text" placeholder="Buscar...">
-                    </div> 
+                    </div>
 
                     <div class="field-content d-flex">
 
@@ -101,7 +101,7 @@
 
                         <div class="content-label-input">
                             <label for="">Unidad de Medida</label><br>
-                           <select name="" id="Ud_medida" class="general-input form-select">
+                            <select name="" id="Ud_medida" class="general-input form-select">
                                 <option selected>Seleccione...</option>
                                 <option value="1">Litros</option>
                                 <option value="2">Mililitros</option>
@@ -110,7 +110,7 @@
                                 <option value="5">Unidades</option>
                                 <option value="6">Cajas</option>
                                 <option value="7">Pares</option>
-                           </select>
+                            </select>
                         </div>
                     </div>
 
@@ -126,7 +126,11 @@
         </div>
 
     </div>
-    </div>
-    <script src="../assets/js/ValidarInsumos.js"></script>
-    </div>
+
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarInsumos.js"></script>
+</body>
+
+</html>

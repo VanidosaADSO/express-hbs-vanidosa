@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center" href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -75,7 +75,7 @@
             <div class="content-title-form">
                 <h2 class="main-title text-center">MODIFICAR CITA</h2>
 
-               <form id="formulario" class="main-form" action="">
+                <form id="formulario" class="main-form" action="">
 
                     <div class="content-select-search d-flex justify-content-between">
                         <select name="" id="" class="select-main form-select" size="1"
@@ -103,18 +103,17 @@
                         <div class="content-label-input">
                             <label for="">Tipo de servicio</label><br>
                             {{!-- <input class="general-input form-control" type="text" id="tipo"> --}}
-                            <select name="" id="" class="select-main form-select" size="1"
-                            onchange="">
-                            <option selected>Tipo de servicio</option>
-                            <option value="2">Corte de cabello</option>
-                            <option value="3">Tratamientos capilares</option>
-                            <option value="4">Rasurado</option>
-                            <option value="4">Arreglo de barba, bigote y patilla</option>
-                            <option value="6">Tintura de cabello</option>
-                            <option value="7">Maquillaje facial</option>
+                            <select name="" id="" class="select-main form-select" size="1" onchange="">
+                                <option selected>Tipo de servicio</option>
+                                <option value="2">Corte de cabello</option>
+                                <option value="3">Tratamientos capilares</option>
+                                <option value="4">Rasurado</option>
+                                <option value="4">Arreglo de barba, bigote y patilla</option>
+                                <option value="6">Tintura de cabello</option>
+                                <option value="7">Maquillaje facial</option>
 
-                        </select>
-                            
+                            </select>
+
                         </div>
 
                         <div class="content-label-input">
@@ -133,8 +132,8 @@
                         </div>
 
                         <div class="content-observations">
-                            <label for="">Observaciones</label><br>
-                            <input class="observations form-control" type="text">
+                            <label for="">Descripción</label><br>
+                            <textarea class="observations form-control" name="" id="" cols="30" rows="10"></textarea>
                         </div>
 
                     </div>
@@ -151,7 +150,10 @@
         </div>
 
     </div>
-    </div>
-    <script src="../assets/js/ValidarCitas.js"></script>
-    </div>
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarCitas.js"></script>
+</body>
+
+</html>

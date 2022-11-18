@@ -18,11 +18,12 @@
     width: 94px;
 }
 
-.content-img-perfil {
+.content-img-account {
     width: calc(100% - 210px);
 }
 
-.img-perfil {
+.img-account {
+    width: 40px;
     height: 40px;
-    margin-right: 22px;
+    margin-right: 25px;
 }

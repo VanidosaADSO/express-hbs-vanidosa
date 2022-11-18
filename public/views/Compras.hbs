@@ -3,7 +3,7 @@
 <main>
     <div class="content-dash d-flex">
         <aside class="menu">
-            <div class="content-menu"> 
+            <div class="content-menu">
 
                 <a class="content-link-menu d-flex align-items-center" href="/home">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center " href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -97,7 +97,7 @@
 
                         <div class="content-label-input">
                             <label for="">Medio de Pago</label><br>
-                            <select name=""  class="general-input form-select" id="pago">
+                            <select name="" class="general-input form-select" id="pago">
                                 <option selected>Seleccione</option>
                                 <option value="">Transferencia</option>
                                 <option value="">Efectivo</option>
@@ -121,7 +121,7 @@
                         </div>
 
                         <div class="content-label-input">
-                            <label for="">Producto</label><br>
+                            <label for="">Insumo</label><br>
                             <select name="" class="general-input form-select" id="producto">
                                 <option selected>Seleccione</option>
                                 <option value="">Opcion 1</option>
@@ -140,6 +140,16 @@
                             <input class="general-input form-control" type="number" id="precio">
                         </div>
 
+                        <div class="content-label-input">
+                            <label for=""> </label><br>
+                            <input type="hidden">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Total factura</label><br>
+                            <input class="general-input form-control" type="number" id="precio">
+                        </div>
+
                     </div>
 
                     <div class="content-button d-flex justify-content-center">
@@ -152,82 +162,85 @@
                 </form><br>
 
                 <div class="content-table">
-                        <table class="main-table table table-bordered">
-                            <tr>
-                                <th class="space text-center">N_Factura</th>
-                                <th class="space text-center">Medio Pago</th>
-                                <th class="space text-center">Fecha</th>
-                                <th class="space text-center">Proveedor</th>
-                                <th class="space text-center">Producto</th>
-                                <th class="space text-center">Precio</th>
-                                <th class="space text-center">Cantidad</th>
+                    <table class="main-table table table-bordered">
+                        <tr>
+                            <th class="space text-center">N_Factura</th>
+                            <th class="space text-center">Medio Pago</th>
+                            <th class="space text-center">Fecha</th>
+                            <th class="space text-center">Proveedor</th>
+                            <th class="space text-center">Producto</th>
+                            <th class="space text-center">Precio</th>
+                            <th class="space text-center">Cantidad</th>
 
-                            </tr>
-                            <tr>
-                                <td class="space">0001</td>
-                                <td class="space">Efectivo</td>
-                                <td class="space">12/2/1799</td>
-                                <td class="space">Bogge</td>
-                                <td class="space">Aceite</td>
-                                <td class="space">4</td>
-                                <td class="space">98.000</td>  
-                            </tr>
+                        </tr>
+                        <tr>
+                            <td class="space">0001</td>
+                            <td class="space">Efectivo</td>
+                            <td class="space">12/2/1799</td>
+                            <td class="space">Bogge</td>
+                            <td class="space">Aceite</td>
+                            <td class="space">4</td>
+                            <td class="space">98.000</td>
+                        </tr>
 
-                            <tr>
-                                <td class="space">0001</td>
-                                <td class="space">Efectivo</td>
-                                <td class="space">12/2/1799</td>
-                                <td class="space">Bogge</td>
-                                <td class="space">Shampoo</td>
-                                <td class="space">3</td>
-                                <td class="space">58.000</td>
-                            </tr>
+                        <tr>
+                            <td class="space">0001</td>
+                            <td class="space">Efectivo</td>
+                            <td class="space">12/2/1799</td>
+                            <td class="space">Bogge</td>
+                            <td class="space">Shampoo</td>
+                            <td class="space">3</td>
+                            <td class="space">58.000</td>
+                        </tr>
 
 
-                            <tr>
-                                <td class="space">0001</td>
-                                <td class="space">Efectivo</td>
-                                <td class="space">12/2/1799</td>
-                                <td class="space">Bogge</td>
-                                <td class="space">Guantes</td>
-                                <td class="space">28</td>
-                                <td class="space">108.000</td>
-                            </tr>
+                        <tr>
+                            <td class="space">0001</td>
+                            <td class="space">Efectivo</td>
+                            <td class="space">12/2/1799</td>
+                            <td class="space">Bogge</td>
+                            <td class="space">Guantes</td>
+                            <td class="space">28</td>
+                            <td class="space">108.000</td>
+                        </tr>
 
-                            <tr>
-                                <td class="space">0001</td>
-                                <td class="space">Efectivo</td>
-                                <td class="space">12/2/1799</td>
-                                <td class="space">Bogge</td>
-                                <td class="space">Cepillo</td>
-                                <td class="space">8</td>
-                                <td class="space">208.000</td>
-                            </tr>
+                        <tr>
+                            <td class="space">0001</td>
+                            <td class="space">Efectivo</td>
+                            <td class="space">12/2/1799</td>
+                            <td class="space">Bogge</td>
+                            <td class="space">Cepillo</td>
+                            <td class="space">8</td>
+                            <td class="space">208.000</td>
+                        </tr>
 
-                            <tr>
-                                <td class="space">0001</td>
-                                <td class="space">Efectivo</td>
-                                <td class="space">12/2/1799</td>
-                                <td class="space">Bogge</td>
-                                <td class="space">Alicer</td>
-                                <td class="space">22</td>
-                                <td class="space">320.000</td>
-                            </tr>
+                        <tr>
+                            <td class="space">0001</td>
+                            <td class="space">Efectivo</td>
+                            <td class="space">12/2/1799</td>
+                            <td class="space">Bogge</td>
+                            <td class="space">Alicer</td>
+                            <td class="space">22</td>
+                            <td class="space">320.000</td>
+                        </tr>
 
-                        </table>
+                    </table>
+                </div>
+
+                <div class="content-button d-flex justify-content-center">
+                    <div class="content-send-clear">
+                        <input class="send-button" type="submit" id="Registrar" value="Registrar">
+                        <input class="clear-button" type="reset" value="Limpiar">
                     </div>
-
-                    <div class="content-button d-flex justify-content-center">
-                        <div class="content-send-clear">
-                            <input class="send-button" type="submit" id="Registrar" value="Registrar">
-                            <input class="clear-button" type="reset" value="Limpiar">
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
 
     </div>
-    </div>
-     <script src="../assets/js/ValidarCompras.js"></script>
-    </div>
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarCompras.js"></script>
+</body>
+
+</html>

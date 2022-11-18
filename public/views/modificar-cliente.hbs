@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center " href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -141,7 +141,7 @@
 
                         <div class="content-observations">
                             <label for="">Observaciones</label><br>
-                            <input class="observations form-control" type="text">
+                            <textarea class="observations form-control" name="" id="" cols="30" rows="10"></textarea>
                         </div>
 
                     </div>
@@ -158,7 +158,10 @@
         </div>
 
     </div>
-    </div>
-    <script src="../assets/js/ValidarClientes.js"></script>
-    </div>
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarClientes.js"></script>
+</body>
+
+</html>

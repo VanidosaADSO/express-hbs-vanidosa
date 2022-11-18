@@ -12,12 +12,12 @@
                     <span class="text-menu">Inicio</span>
                 </a>
 
-                <a class="content-link-menu d-flex align-items-center" href="/roles">
+                {{!-- <a class="content-link-menu d-flex align-items-center" href="/roles">
                     <div class="content-icon-menu d-flex justify-content-center">
                         <img class="icon-menu" src="../assets/img/roles.svg" alt="">
                     </div>
                     <span class="text-menu">Roles</span>
-                </a>
+                </a> --}}
 
                 <a class="content-link-menu d-flex align-items-center active" href="/usuarios">
                     <div class="content-icon-menu d-flex justify-content-center">
@@ -77,7 +77,7 @@
 
                 <form class="main-form" action="">
 
-                  <div class="content-select-search d-flex justify-content-between">
+                    <div class="content-select-search d-flex justify-content-between">
                         <select name="" id="" class="select-main form-select" size="1"
                             onchange="window.location.href=this.value;">
                             <option value="/modificar-usuario">modificar usuario</option>
@@ -91,28 +91,38 @@
                     <div class="field-content d-flex">
 
                         <div class="content-label-input">
+                            <label for="">Rol</label><br>
+                            <select name="" id="rol" class="general-input form-select">
+                                <option selected>Seleccione...</option>
+                                <option value="1">Administrador</option>
+                                <option value="2">Empleado</option>
+                                <option value="3">Cliente</option>
+                            </select>
+                        </div>
+
+                        <div class="content-label-input">
                             <label for="">Nombre</label><br>
-                            <input class="general-input form-control" type="text" id="nombre">
+                            <input class="general-input form-control" type="text" id="nombre" readonly>
                         </div>
 
                         <div class="content-label-input">
                             <label for="">Apellidos</label><br>
-                            <input class="general-input form-control" type="text" id="apellido">
+                            <input class="general-input form-control" type="text" id="apellido" readonly>
                         </div>
 
                         <div class="content-label-input">
                             <label for="">Tipo de documento</label><br>
                             <select name="" id="Tipodocumento" class="general-input form-select">
                                 <option selected>Seleccione...</option>
-                                <option value="">Cedula ciudadanía</option>
-                                <option value="">Cedula de extranjería</option>
-                                <option value="">Targeta de identidad</option>
+                                <option value="CC">Cedula ciudadanía</option>
+                                <option value="Ti">Cedula de extranjería</option>
+                                <option value="CE">Targeta de identidad</option>
                             </select>
                         </div>
 
                         <div class="content-label-input">
                             <label for="">Documento</label><br>
-                            <input class="general-input form-control" type="number" id="documento">
+                            <input class="general-input form-control" type="number" id="documento" readonly>
                         </div>
 
                         <div class="content-label-input">
@@ -131,13 +141,18 @@
                         </div>
 
                         <div class="content-label-input">
-                            <label for="">Rol</label><br>
-                            <input class="general-input form-control" type="text" id="rol">
+                            <label for="">Contraseña actual</label><br>
+                            <input class="general-input form-control" type="text" id="contrasenaActual">
                         </div>
 
-                        <div class="content-observations">
-                            <label for="">Observaciones</label><br>
-                            <input class="observations form-control" type="text" id="observaciones">
+                        <div class="content-label-input">
+                            <label for="">Nueva contraseña</label><br>
+                            <input class="general-input form-control" type="text" id="nuevaContrasena">
+                        </div>
+
+                        <div class="content-label-input">
+                            <label for="">Confirmar contraseña</label><br>
+                            <input class="general-input form-control" type="text" id="confirmarContrasena">
                         </div>
 
                     </div>
@@ -154,7 +169,10 @@
         </div>
 
     </div>
-    </div>
-    <script src="../assets/js/ValidarUsuarios.js"></script>
-    </div>
 </main>
+
+<script src="../assets/js/funcionesClientes.js"></script>
+<script src="../assets/js/ValidarUsuarios.js"></script>
+</body>
+
+</html>
