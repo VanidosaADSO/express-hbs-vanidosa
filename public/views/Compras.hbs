@@ -82,10 +82,12 @@
                             onchange="window.location.href=this.value;">
                             <option value="/Compras">Crear Compras</option>
                             <option value="/listar_Compras">Listar Compras</option>
-
                         </select>
 
-                        <input class="search form-control" type="text" placeholder="Buscar...">
+                        <div class="content-search">
+                            <input class="search form-control" type="text" placeholder="Buscar...">
+                            <img class="search-icon" src="../assets/img/search.svg" alt="">
+                        </div>
                     </div>
 
                     <div class="field-content-compras d-flex justify-content-between">
@@ -93,7 +95,7 @@
                         <div class="container-fpfp d-flex">
                             <div class="content-fpfp">
                                 <div class="content-label-input-compras">
-                                    <label for="">N_Factura</label><br>
+                                    <label for="">Número de factura</label><br>
                                     <input class="general-input-compras form-control" type="number" id="factura">
                                 </div>
 
@@ -157,8 +159,7 @@
 
                     <div class="content-button d-flex justify-content-center">
                         <div class="content-send-clear">
-                            <input class="send-button" type="submit" id="btnRegistrar" value="Agregar">
-                            <input class="clear-button" type="reset" value="Limpiar">
+                            <input class="add-product" type="submit" id="btnRegistrar" value="Agregar producto">
                         </div>
                     </div>
 
@@ -217,17 +218,15 @@
                             <td class="space">208.000</td>
                         </tr>
 
-                        <tr>
-                            <td class="space">0001</td>
-                            <td class="space">Efectivo</td>
-                            <td class="space">12/2/1799</td>
-                            <td class="space">Bogge</td>
-                            <td class="space">Alicer</td>
-                            <td class="space">22</td>
-                            <td class="space">320.000</td>
-                        </tr>
-
                     </table>
+
+                    <div class="content-button d-flex justify-content-center">
+                        <div class="content-send-clear">
+                        <input class="clear-button" type="reset" value="Limpiar">
+                        <input class="send-button" type="submit" id="btnRegistrar" value="Registrar">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

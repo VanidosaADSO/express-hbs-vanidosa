@@ -83,10 +83,12 @@
                             <option value="/modificar-cliente">Modificar cliente</option>
                             <option value="/clientes">Crear Cliente</option>
                             <option value="/listar-clientes">Listar Cliente</option>
-
                         </select>
 
-                        <input class="search form-control" type="text" placeholder="Buscar...">
+                        <div class="content-search">
+                            <input class="search form-control" type="text" placeholder="Buscar...">
+                            <img class="search-icon" src="../assets/img/search.svg" alt="">
+                        </div>
                     </div>
 
                     <div class="field-content d-flex">
@@ -109,8 +111,6 @@
                                 <option value="2">CC</option>
                                 <option value="3">TI</option>
                                 <option value="4">CE</option>
-
-
                             </select>
                         </div>
 
@@ -148,8 +148,8 @@
 
                     <div class="content-button d-flex justify-content-center">
                         <div class="content-send-clear">
-                            <input id="registrar" class="send-button" type="submit" value="Guardar">
                             <input class="clear-button" type="reset" value="Limpiar">
+                            <input id="registrar" class="send-button" type="submit" value="Guardar">
                         </div>
                     </div>
 
